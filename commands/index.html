@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Greed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="commands.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap category-filter mb-4">
+            <div class="category-item active" onclick="showBoxes('all')">
+                <i class="bi bi-slash-circle"></i> All <span class="badge bg-dark">20</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('autopost')">
+                <i class="bi bi-info-circle"></i> Autopost <span class="badge bg-dark">1</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('ticket')">
+                <i class="bi bi-gear"></i> Ticket <span class="badge bg-dark">1</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('moderation')">
+                <i class="bi bi-shield"></i> Moderation <span class="badge bg-dark">6</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('info')">
+                <i class="bi bi-card-list"></i> Info <span class="badge bg-dark">6</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('fun')">
+                <i class="bi bi-emoji-smile"></i> Fun <span class="badge bg-dark">3</span>
+            </div>
+            <div class="category-item" onclick="showBoxes('system')">
+                <i class="bi bi-ui-checks-grid"></i> System <span class="badge bg-dark">3</span>
+            </div>
+        </div>
+        <div id="command-boxes" class="row">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="commands.js"></script>
+</body>
+</html>

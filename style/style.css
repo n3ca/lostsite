@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, #1c1c1c, #000000);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+h1, p, a {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.container img {
+    width: 150px;
+    height: auto;
+}
+
+.container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+.btn-dark {
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transform: scale(1);
+}
+
+.btn-dark:hover {
+    background-color: #495057;
+    color: #f8f9fa;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .container img {
+        width: 100px;
+    }
+}
