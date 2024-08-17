@@ -16,7 +16,7 @@ function showBoxes(category) {
             { title: 'Moderation', details: '.nuke' },
             { title: 'Info', details: '.userinfo; .ui; .avatar; .av' },
             { title: 'System', details: '.ping; .botinfo; .bi' },
-            { title: 'Fun', details: '.hug; .slap; .kiss' }
+            { title: 'Fun', details: '.hug; .slap; .kiss; .ask' }
         ];
     } else if (category === 'autopost') {
         boxesContent = [
@@ -46,9 +46,10 @@ function showBoxes(category) {
         ];
     } else if (category === 'fun') {
         boxesContent = [
+            { title: 'Fun', details: '.ask' },
             { title: 'Fun', details: '.kiss' },
             { title: 'Fun', details: '.slap' },
-            { title: 'Fun', details: '.hug' },
+            { title: 'Fun', details: '.hug' }
         ];
     } else if (category === 'system') {
         boxesContent = [
